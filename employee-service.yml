@@ -1,6 +1,6 @@
 spring:
   boot:
-    message: Employee service spring cloud bus updated
+    message: Employee service spring cloud bus
   datasource:
     url: jdbc:mysql://localhost:3306/employee_db
     username: root
@@ -20,3 +20,9 @@ eureka:
       service-url:
         defaultZone: http://localhost:8761/eureka/
   renewalPercentThreshold: 0:85
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
